@@ -191,8 +191,8 @@ main *
 }
 .container-section .img>p
 {
-  background: rgba(0, 0, 0, 0.151);
-  color: white;
+  background: rgba(0, 0, 0, 0.938);
+  color: rgb(184, 12, 12);
   font-size: 2vw;
   height: 30vw;
   text-shadow: 2px 0px 2px black;
