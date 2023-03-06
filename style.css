@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waterfall&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+:root 
+{
+  --font1: 'Dancing Script', cursive;
+  --font2: 'Righteous', cursive;
+  --font3: 'Poiret One', cursive;
+  --font4: 'Bad Script', cursive;
+  --font5: 'Source Serif Pro', serif;
+  --font6: 'Baskervville', serif;
+  --font7: 'EB Garamond', serif;
+  --font8: 'Trirong', serif;
+  --font9: 'Dancing Script', cursive;
+  --font10: 'Great Vibes', cursive;
+  --font11: 'Sacramento', cursive;
+  --font12: 'Tangerine', cursive;
+  --font13: 'Fredericka the Great', cursive;
+  --font14: 'Sofia', cursive;
+  --font15: 'Passions Conflict', cursive;
+  --font16: 'Waterfall', cursive;
+  --font17: 'Mea Culpa', cursive;
+  --font18: 'Rubik Glitch', cursive;
+}
+
+* 
+{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body
+{
+  position: absolute;
+  width: 99vw;
+  height: 100vh;
+  background: url(backgroud.jpg) no-repeat fixed top left;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header
+{
+  display: flex;
+  position: fixed;
+  top: 0%;
+  width: 99vw;
+  height: 16.1vh;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  background: url(backgroud.jpg) no-repeat fixed top left;
+  background-size: cover;
+  z-index: 10;
+}
+.container-header
+{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+}
+.container-header h1
+{
+  position: relative;
+  display: flex;
+  color: #e873ff;
+  
+  filter: blur(1px);
+  font-family: var(--font17);
+  font-size: 8vh;
+  text-shadow: 5px 2px 5px rgb(255, 255, 255),
+                          5px 2px 15px rgb(247, 0, 255);
+}
+.container-header h1 span
+{
+  margin: 1px;
+  animation: colorido 1s linear infinite;
+  animation-delay: calc(.08s * var(--i));
+}
+@keyframes colorido
+{
+  0%
+  {
+    filter: hue-rotate(0deg);
+    transform: translate(0px, -15px);
+  }
+  100%
+  {
+    filter: hue-rotate(100deg);
+    transform: translate(0px, 15px);
+  }
+}
+main
+{
+  width: 99vw;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  justify-content: center;
+}
+main *
+{
+  margin: 10px;
+}
+.container-imagem.one
+{
+  position: fixed;
+  left: 2%;
+}
+.container-imagem.one img
+{
+  width: 18vw;
+}
+.container-imagem.two
+{
+  position: fixed;
+  right: 2%;
+}
+.container-imagem.two img
+{
+  width: 22vw;
+}
+.container-section
+{
+  margin: auto;
+  margin-top: 12vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 45vw;
+  min-height: 500px;
+  border-radius: 1vw;
+  padding: 20px;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+}
+.container-fundo
+{
+  position: fixed;
+  top: 15vh;
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  height: 100vh;
+  min-height: 500px;
+  background: rgba(255, 255, 255, 0.719);
+  border-radius: 1vw;
+  box-shadow: inset 0px 0px 10px rgb(128, 128, 128);
+  z-index: 0;
+}
+.container-section section
+{
+  display: flex;
+  width: 43vw;
+  border-radius: 4px;
+  font-size: 2vw;
+  margin-bottom: 1vh;
+  text-align: center;
+  justify-content: center;
+  line-height: 2vw;
+  min-inline-size: 1vh;
+  border-radius: 1vw;
+}
+.container-section section p
+{
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  border-radius: 1vw;
+  padding: 2vw .5vw;
+  font-family: var(--font14);
+}
+.container-section section#img-one
+{
+  background: url(A-Beleza-das-Flores-4.jpg) no-repeat fixed top left;
+  background-size: cover;
+  border-radius: 1vw;
+}
+.container-section section#img-two
+{
+  background: url(depositphotos_33937471-stock-photo-cosmos-flowers.jpg) no-repeat fixed left top;
+  background-size: cover;
+  border-radius: 1vw;
+}
+.container-section section#img-tree
+{
+  background: url(pasted\ image\ 0.png) no-repeat fixed left top;
+  background-size: cover;
+  border-radius: 1vw;
+}
+.container-section .img>p
+{
+  background: rgba(0, 0, 0, 0.151);
+  color: white;
+  font-size: 2vw;
+  height: 30vw;
+  text-shadow: 2px 0px 2px black;
+  margin: 20px;
+}
+.container-section .img
+{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+          
